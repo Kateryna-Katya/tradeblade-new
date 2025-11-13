@@ -444,7 +444,257 @@ border-left: none;
     font-size: 20px;
   }
   .start-btn{
-    margin: 56px auto 0;
-    
+    margin: 56px auto 0;    
   }
+}
+/* Price */
+.price-container{
+    padding-top: 58px;
+    padding-bottom: 16px;
+}
+.tariffs{
+    margin-top: 22px;
+    margin-bottom: 24px;
+}
+
+.tabs {
+background: rgba(106, 84, 255, 0.4);
+    border-radius: 4px;
+    display: flex;
+    margin-bottom: 15px;
+    padding: 4px;
+  }
+
+.tab {
+    flex: 1;
+    background: inherit;
+    border: none;
+    box-shadow: none;
+font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.33333;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #57e1ff;
+    width: 167px;
+    height: 44px;
+    padding: 12px 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.tab.active {
+background: #57e1ff;
+border-radius: 4px;
+    width: 167px;
+    height: 44px;
+    font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.33333;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+        color: #000;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    animation: fadeIn 0.3s ease;
+}
+.standard{
+    border: 1px solid #6a54ff;
+        border-radius: 8px;
+        width: 343px;
+        height: auto;
+        padding: 16px;
+}
+.card-list{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.card-item{
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    padding: 8px;
+border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+.card-text{
+    font-size: 16px;
+}
+.select-box {
+    position: relative;
+    width: 160px;
+    user-select: none;
+}
+
+.selected {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 8px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.selected:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.arrow {
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+
+.options {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    background: rgba(30, 30, 40, 0.95);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 10;
+}
+
+.options.active {
+    display: block;
+    animation: fadeIn 0.15s ease-in-out;
+}
+
+.option {
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.option:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.vip {
+border-radius: 8px;
+  width: 343px;
+    height: auto;
+    background: #6a54ff;
+    padding: 16px;
+}
+.price-wrapper{
+    margin-top: 24px;
+    display: flex;
+    gap: 55px;
+}
+.price {
+font-weight: 500;
+    font-size: 35px;
+    line-height: 1.14286;
+    letter-spacing: -0.04em;
+    display: flex;
+    align-items: start;
+}
+
+.discount {
+font-weight: 500;
+    font-size: 18px;
+    line-height: 1.11111;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #35ff9e;
+    margin-left: 10px;
+}
+
+.price-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+        padding: 8px 24px;
+        width: 310px;
+        height: 52px;
+        box-shadow: 0 0 4px 0 #57e1ff;
+            background: #57e1ff;
+    transition: background 0.3s;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.try-text{
+    font-weight: 500;
+        font-size: 16px;
+          line-height: 1.25;
+        text-transform: uppercase;
+        color: #030718;
+}
+.free-text{
+    font-size: 12px;
+    line-height: 1.33333;
+        color: #030718;
+        opacity: 0.56;
+}
+.price-btn:hover {
+    background: #0891b2;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media only screen and (min-width: 1440px) {
+   .price-container{
+    padding: 96px 297px;
+   }
+   .tabs{
+    width: 413px;
+    height: 52px;
+   }
+   .cards{
+    flex-direction: row;
+    gap: 20px;
+   }
+   .card{
+    width: 413px;
+    margin-top: 44px;
+   }
+   .standart-price-wrapper{
+    margin-top: 130px;
+   }
+   .price-btn{
+    width: 365px;
+        height: 52px;
+   }
 }
