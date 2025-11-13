@@ -776,3 +776,118 @@ font-weight: 500;
     gap: 20px;
    }
 }
+/* faq */
+.faq-section{
+    background-color: #fff;
+}
+.faq-container{
+    padding-top: 56px;
+    padding-bottom: 54px;
+}
+.faq-title{
+        color: #030718;
+}
+.faq-acc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 40px auto 0;
+    gap: 12px;
+}
+
+.faq-acc-el {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: border-radius 0.3s ease;
+}
+
+.faq-acc-el-trigger {
+    padding: 16px;
+    background: #eaeff0;
+    width: 100%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.04em;
+    color: #030718;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+      transition: background 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+    cursor: pointer;
+}
+
+.faq-acc-arr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: inherit;
+    min-width: 48px;
+    transition: transform 0.3s ease;
+}
+
+.faq-acc-arr svg path {
+    transition: stroke 0.3s ease;
+}
+
+.faq-acc-el-descr-frame {
+    margin-top: -1px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 16px;
+    color: #fff;
+    text-align: left;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+}
+
+.faq-acc-el-descr-frame p {
+    margin: 0 0 10px;
+}
+.faq-acc-el.open {
+    border-radius: 8px;
+}
+
+.faq-acc-el.open .faq-acc-el-trigger {
+    background: #6a54ff;
+    color: #fff;
+    border-radius: 0;
+}
+.second-text{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.faq-acc-el.open .faq-acc-arr {
+    transform: rotate(180deg);
+}
+
+.faq-acc-el.open .faq-acc-arr svg path {
+    stroke: #fff;
+}
+
+.faq-acc-el.open .faq-acc-el-descr-frame {
+    opacity: 1;
+    background: #6a54ff;
+}
+@media only screen and (min-width: 1440px) {
+  .faq-container{
+    padding: 96px 297px;
+  }
+  .faq-acc{
+    margin-top: 64px;
+  }
+  .faq-acc-el-trigger{
+    font-size: 24px;
+  }
+}
