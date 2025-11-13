@@ -15,28 +15,81 @@
     <script type="module" crossorigin src="/tradeblade-new/index.js"></script>
     <link rel="modulepreload" crossorigin href="/tradeblade-new/assets/vendor-YE1i_CEl.js">
     <link rel="stylesheet" crossorigin href="/tradeblade-new/assets/vendor-erHEUhN6.css">
-    <link rel="stylesheet" crossorigin href="/tradeblade-new/assets/index-CwKL6p0e.css">
+    <link rel="stylesheet" crossorigin href="/tradeblade-new/assets/index-Be5IXm41.css">
   </head>
   <body>
-    <!-- <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+    <header class="header" id="site-header">
+  <div class="header-container container">
+    <picture class="header-img-wrapper">
+      <source srcset="/tradeblade-new/assets/logo-desk-AcebNm8l.png 1x, /tradeblade-new/assets/logo-desk-2x-XCTHsyZt.png 2x" media="(min-width: 1440px)" />
+      <source srcset="/tradeblade-new/assets/logo-mob--r6D2JDq.png 1x, /tradeblade-new/assets/logo-mob-2x-INhBtcPF.png 2x" media="(max-width: 1439px)" />
+      <img class="header-img" src="/tradeblade-new/assets/logo-mob--r6D2JDq.png" alt="Logo" loading="lazy" />
+    </picture>
+    <button type="button" class="menu-button" aria-label="menu toggle">
+      <span class="icon">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M4.39999 9.33324C4.39999 8.81777 4.81786 8.3999 5.33333 8.3999H26.6667C27.1821 8.3999 27.6 8.81777 27.6 9.33324C27.6 9.8487 27.1821 10.2666 26.6667 10.2666H5.33333C4.81786 10.2666 4.39999 9.8487 4.39999 9.33324Z"
+    fill="#E7F7F8" />
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M4.39999 16C4.39999 15.4845 4.81786 15.0667 5.33333 15.0667H26.6667C27.1821 15.0667 27.6 15.4845 27.6 16C27.6 16.5154 27.1821 16.9333 26.6667 16.9333H5.33333C4.81786 16.9333 4.39999 16.5154 4.39999 16Z"
+    fill="#E7F7F8" />
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M4.39999 22.6665C4.39999 22.151 4.81786 21.7332 5.33333 21.7332H26.6667C27.1821 21.7332 27.6 22.151 27.6 22.6665C27.6 23.182 27.1821 23.5998 26.6667 23.5998H5.33333C4.81786 23.5998 4.39999 23.182 4.39999 22.6665Z"
+    fill="#E7F7F8" />
+</svg>
+      </span>
+    </button>
+    <nav class="nav ">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="links" href="#numbers">Цифры</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="navigation-item">
+          <a class="links" href="#deals">Сделки онлайн</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#about">о компании</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#start">как начать</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#price">тарифы</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#reviews">отзывы</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="#faq">FAQ</a>
         </li>
       </ul>
     </nav>
+      <div class="header-btn-desk">
+        <a class="sign-in-btn sign-in-btn-desk" href="#start">Войти</a> 
+        <a class="sign-up-btn sign-up-btn-desk" href="#email">регистрация</a>
+     
+      </div>
   </div>
-</header> -->
+</header>
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+  <ul class="menu-list">
+    <li class="menu-item"><a class="menu-list-item" href="#numbers">Цифры</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#deals">Сделки онлайн</a></li>
+    <li class="menu-item">
+      <a class="menu-list-item" href="#about">о компании</a>
+    </li>
+    <li class="menu-item"><a class="menu-list-item" href="#start">как начать</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#price">тарифы</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#reviews">отзывы</a></li>
+    <li class="menu-item"><a class="menu-list-item" href="#faq">FAQ</a></li>
+  </ul>
+  <div class="header-btn">
+    <a class="sign-up-btn" href="#email">регистрация</a>
+    <a class="sign-in-btn" href="#start">Войти</a>
+  </div>
+</div>
 
 
     <main>
@@ -44,7 +97,7 @@
       <!-- Hero -->
  <section class="hero-section">
     <div class="container hero-conatiner">
-        <picture class="hero-img-wrapper">
+        <picture class="hero-img-wrapper pulse">
             <source srcset="/tradeblade-new/assets/hero-desk-z3IVvbSG.png 1x, /tradeblade-new/assets/hero-desk-2x-Cw6wK-Lx.png 2x" media="(min-width: 1440px)" />
             <source srcset="/tradeblade-new/assets/hero-mob-DBC5Tffb.png 1x, /tradeblade-new/assets/hero-mob-2x-BMKLzBGZ.png 2x" media="(max-width: 1439px)" />
             <img class="hero-img" src="/tradeblade-new/assets/hero-mob-DBC5Tffb.png" alt="EtH/USDT" loading="lazy" />
@@ -62,7 +115,7 @@
     </div>
  </section>
  <!-- Numbers -->
-<section class="numbers-section">
+<section class="numbers-section" id="numbers">
     <div class="container number-conteiner">
     <div class="numbers-warpper">
        <h2 class="numbers-title">Цифры</h2> 
@@ -87,7 +140,7 @@
     </div>
 </section>
 <!-- Deals -->
-<section class="deals-section">
+<section class="deals-section" id="deals">
     <div class="container deals-container">
         <h2 class="deals-title">Прошедшие сделки</h2>
         <ul class="deals-list">
@@ -118,7 +171,7 @@
     </div>
 </section>
 <!-- About -->
-<section class="about-section">
+<section class="about-section" id="about">
     <div class="container about-container">
 <div class="about-wrapper">
     <h2 class="about-title">О компании</h2>
@@ -185,7 +238,7 @@
     </div>
 </section>
 <!-- Start -->
-<section class="start-section">
+<section class="start-section" id="start">
     <div class="container start-container">
         <h2 class="start-title">Как начать пользоваться сервисом</h2>
         <ul class="start-list">
@@ -318,7 +371,7 @@
     </div>
 </section>
 <!-- Reviews -->
-<section class="reviews-section">
+<section class="reviews-section" id="reviews">
     <div class="container reviews-container">
         <h2 class="reviews-title">Отзывы учасников комьюнити</h2>
         <ul class="reviews-list" id="reviewsList">
@@ -363,7 +416,7 @@
     </div>
 </section>
 <!-- Faq -->
-<section class="faq-section">
+<section class="faq-section" id="faq">
     <div class="container faq-container">
         <h2 class="faq-title">часто задаваемые вопросы</h2>
            <ul class="faq-acc">
@@ -434,7 +487,7 @@
     </div>
 </section>
 <!-- Email us -->
-<section class="email-section">
+<section class="email-section" id="email">
     <div class="container email-container">
         <h2 class="visually-hidden">Напишите нам</h2>
         <h3 class="email-title">Начните прямо сейчас с бесплатным<br> 5–и дневным пробным периодом!</h3>
