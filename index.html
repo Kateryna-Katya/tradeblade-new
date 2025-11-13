@@ -15,7 +15,7 @@
     <script type="module" crossorigin src="/tradeblade-new/index.js"></script>
     <link rel="modulepreload" crossorigin href="/tradeblade-new/assets/vendor-YE1i_CEl.js">
     <link rel="stylesheet" crossorigin href="/tradeblade-new/assets/vendor-erHEUhN6.css">
-    <link rel="stylesheet" crossorigin href="/tradeblade-new/assets/index-BWHxJIVp.css">
+    <link rel="stylesheet" crossorigin href="/tradeblade-new/assets/index-DGaI7huD.css">
   </head>
   <body>
     <!-- <header class="header">
@@ -209,7 +209,114 @@
         <a class="start-btn" href="#price">Попробовать бесплатно</a>
     </div>
 </section>
-
+<!-- Price -->
+<section class="price-section" id="price">
+    <div class="container price-container">
+        <h2 class="price-title">Тарифы</h2>
+    <div class="tariffs">
+        <div class="tabs">
+            <button id="spotBtn" class="tab active">СПОТ</button>
+            <button id="futuresBtn" class="tab">ФЬЮЧЕРС</button>
+        </div>
+    
+        <div id="cardsContainer" class="cards">
+            <div class="card standard">
+                <h3>STANDARD</h3>
+                <ul class="card-list">
+                    <li class="card-item">
+                    <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVHgBrZBdDYAwDIRLMDAJk4IUHEwSEpDAIzKQgITjFgrhZ9m6ZE0ufeh9y5eJVE5nLQJwXK43lj3XGgFLPwITsytYLI84J7z81PGnwmzM8j3MevAmlcdLN5RUyUBDUiUDoeZXLihIizkAaNWNXbfdf1AAAAAASUVORK5CYII=" alt="check" loading="lazy" />
+                    <p class="card-text">Ручной трейдинг</p>
+                    </li>
+                    <li class="card-item">
+                        <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVHgBrZBdDYAwDIRLMDAJk4IUHEwSEpDAIzKQgITjFgrhZ9m6ZE0ufeh9y5eJVE5nLQJwXK43lj3XGgFLPwITsytYLI84J7z81PGnwmzM8j3MevAmlcdLN5RUyUBDUiUDoeZXLihIizkAaNWNXbfdf1AAAAAASUVORK5CYII=" alt="check" loading="lazy" />
+                    <p class="card-text">Автоматическое или полуавтоматическое копирование сделок</p>
+                </li>
+                    <li class="card-item">
+                        <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVHgBrZBdDYAwDIRLMDAJk4IUHEwSEpDAIzKQgITjFgrhZ9m6ZE0ufeh9y5eJVE5nLQJwXK43lj3XGgFLPwITsytYLI84J7z81PGnwmzM8j3MevAmlcdLN5RUyUBDUiUDoeZXLihIizkAaNWNXbfdf1AAAAAASUVORK5CYII=" alt="check" loading="lazy" />
+                    <p class="card-text">Личный кабинет со статистикой</p>
+                </li>
+                    <li class="card-item">
+                        <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVHgBrZBdDYAwDIRLMDAJk4IUHEwSEpDAIzKQgITjFgrhZ9m6ZE0ufeh9y5eJVE5nLQJwXK43lj3XGgFLPwITsytYLI84J7z81PGnwmzM8j3MevAmlcdLN5RUyUBDUiUDoeZXLihIizkAaNWNXbfdf1AAAAAASUVORK5CYII=" alt="check" loading="lazy" />
+                    <p class="card-text">Среднесрочные сделки с уровнями набора портфеля</p>
+                    </li>
+                </ul>
+                <div class="price-wrapper standart-price-wrapper">
+                <p class="price">$234 <span class="discount">-35%</span></p>
+                <div class="select-box">
+                    <div class="selected" id="selected">
+                        <span id="selectedText">12 месяцев</span>
+                        <span class="arrow" id="arrow">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABjSURBVHgB7ZDRDYAgDESvGzCCqzgxIziKblIh4cMYlQrlh9xL+tPcvSYFCCGPqGpIs4zK50JMs1tKOVOyEVYupc8j1lxTuUtek7jI32R/5QIDRbTd1quIHPDC9S2VIwGEzMUJg02qTAvEpe4AAAAASUVORK5CYII=" alt="Arrow" loading="lazy">
+                        </span>
+                    </div>
+                    <ul class="options" id="options">
+                        <li class="option">12 месяцев</li>
+                         <li class="option">6 месяцев</li>
+                        <li class="option">3 месяца</li>                     
+                        
+                    </ul>
+                </div>
+                </div>
+                <a class="price-btn" href="#reviews">
+                    <p class="try-text">Попробовать</p>
+                    <p class="free-text">5 дней бесплатно</p>
+                </a>
+            </div>
+    
+            <div class="card vip">
+                <h3>VIP</h3>
+                <ul class="card-list">
+                    <li class="card-item">
+                    <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVHgBrZBdDYAwDIRLMDAJk4IUHEwSEpDAIzKQgITjFgrhZ9m6ZE0ufeh9y5eJVE5nLQJwXK43lj3XGgFLPwITsytYLI84J7z81PGnwmzM8j3MevAmlcdLN5RUyUBDUiUDoeZXLihIizkAaNWNXbfdf1AAAAAASUVORK5CYII=" alt="check" loading="lazy" />
+                    <p class="card-text">Ручной трейдинг</p>
+                    </li>
+                    <li class="card-item">
+                        <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVHgBrZBdDYAwDIRLMDAJk4IUHEwSEpDAIzKQgITjFgrhZ9m6ZE0ufeh9y5eJVE5nLQJwXK43lj3XGgFLPwITsytYLI84J7z81PGnwmzM8j3MevAmlcdLN5RUyUBDUiUDoeZXLihIizkAaNWNXbfdf1AAAAAASUVORK5CYII=" alt="check" loading="lazy" />
+                    <p class="card-text">Автоматическое или полуавтоматическое копирование сделок</p>
+                </li>
+                    <li class="card-item">
+                        <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVHgBrZBdDYAwDIRLMDAJk4IUHEwSEpDAIzKQgITjFgrhZ9m6ZE0ufeh9y5eJVE5nLQJwXK43lj3XGgFLPwITsytYLI84J7z81PGnwmzM8j3MevAmlcdLN5RUyUBDUiUDoeZXLihIizkAaNWNXbfdf1AAAAAASUVORK5CYII=" alt="check" loading="lazy" />
+                    <p class="card-text">Личный кабинет со статистикой</p>
+                </li>
+                    <li class="card-item">
+                        <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVHgBrZBdDYAwDIRLMDAJk4IUHEwSEpDAIzKQgITjFgrhZ9m6ZE0ufeh9y5eJVE5nLQJwXK43lj3XGgFLPwITsytYLI84J7z81PGnwmzM8j3MevAmlcdLN5RUyUBDUiUDoeZXLihIizkAaNWNXbfdf1AAAAAASUVORK5CYII=" alt="check" loading="lazy" />
+                    <p class="card-text">Краткосрочные, среднесрочные и инвест сделки</p>
+                    </li>
+                         <li class="card-item">
+                        <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVHgBrZBdDYAwDIRLMDAJk4IUHEwSEpDAIzKQgITjFgrhZ9m6ZE0ufeh9y5eJVE5nLQJwXK43lj3XGgFLPwITsytYLI84J7z81PGnwmzM8j3MevAmlcdLN5RUyUBDUiUDoeZXLihIizkAaNWNXbfdf1AAAAAASUVORK5CYII=" alt="check" loading="lazy" />
+                    <p class="card-text">Доступ в Vip чат с командой</p>
+                </li>
+                    <li class="card-item">
+                        <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVHgBrZBdDYAwDIRLMDAJk4IUHEwSEpDAIzKQgITjFgrhZ9m6ZE0ufeh9y5eJVE5nLQJwXK43lj3XGgFLPwITsytYLI84J7z81PGnwmzM8j3MevAmlcdLN5RUyUBDUiUDoeZXLihIizkAaNWNXbfdf1AAAAAASUVORK5CYII=" alt="check" loading="lazy" />
+                    <p class="card-text">Наш авторский курс по трейдингу</p>
+                    </li>
+                </ul>
+                <div class="price-wrapper">
+                <p class="price">$585 <span class="discount">-35%</span></p>
+                <div class="select-box">
+                    <div class="selected" id="selected">
+                        <span id="selectedText">12 месяцев</span>
+                        <span class="arrow" id="arrow">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABjSURBVHgB7ZDRDYAgDESvGzCCqzgxIziKblIh4cMYlQrlh9xL+tPcvSYFCCGPqGpIs4zK50JMs1tKOVOyEVYupc8j1lxTuUtek7jI32R/5QIDRbTd1quIHPDC9S2VIwGEzMUJg02qTAvEpe4AAAAASUVORK5CYII=" alt="Arrow" loading="lazy">
+                        </span>
+                    </div>
+                    <ul class="options" id="options">
+                        <li class="option">12 месяцев</li>
+                         <li class="option">6 месяцев</li>
+                        <li class="option">3 месяца</li>                     
+                        
+                    </ul>
+                </div>
+                </div>
+                <a class="price-btn" href="#reviews">
+                    <p class="try-text">Попробовать</p>
+                    <p class="free-text">5 дней бесплатно</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
     </main>
 
     <!-- <footer class="footer">
