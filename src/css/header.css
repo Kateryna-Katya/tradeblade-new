@@ -1,44 +1,199 @@
 .header {
-  padding: 20px 0;
+  position: fixed;
+  top: 0px;
+  left: 40%;
+  transform: translateX(-40%);
+  z-index: 1003;
+height: 52px;
+  width: 100%;
 }
-.nav {
+
+.header-container {
+  padding: 0px 10px;
   display: flex;
   justify-content: space-between;
-}
-.nav-logo {
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
 }
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+.header-img-wrapper{
+  width: 120px;
+
 }
-.nav-link {
-  position: relative;
+.menu-button {
   display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+  box-shadow: none;
+  background-color: inherit;
+  width: 32px;
+  height: 32px;
+  border: none;
+  margin-left: auto;
+  padding: 0;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+
+.navigation-list {
+  display: none;
 }
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
+
+.modal {
+  display: none;
+  height: auto;
+  width: 375px;
+  background: #6a54ff;
+   z-index: 1000;
+  position: fixed;
+  top: 0px;
   left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+  transform: translateX(-50%);
+  padding: 32px 16px 16px;
+  transition: visibility 0.3s ease;
 }
-.nav-link.active::after {
-  background: #747bff;
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap:32px;
+    margin-top: 40px;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.header-navigation {
+  display: flex;
+  gap: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: #081119;
+}
+
+.menu-item {
+font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  padding: 8px 0px;
+  width: 100%;
+  height: 35px;
+  text-align: left;
+}
+
+.menu-item:active,
+.menu-item:hover,
+.menu-item:focus {
+ opacity: 1;
+}
+
+.header-btn{
+  margin-top: 112px;
+  display: flex;
+  gap: 16px;
+}
+.sign-up-btn{
+  display: block;
+  border-radius: 3px;
+    padding: 16px 24px;
+    width: 163px;
+    height: 52px;
+    box-shadow: 0 0 4px 0 #57e1ff;
+      background: #57e1ff;
+      font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        text-transform: uppercase;
+        color: #030718;
+        transition: background 0.3s ease;
+}
+.sign-up-btn:hover{
+background: #2CB8E5;
+}
+.sign-in-btn{
+  display: block;
+  border: 2px solid #57e1ff;
+  box-shadow: 0 0 4px 0 #57e1ff;
+    background: rgba(87, 225, 255, 0.2);
+     border-radius: 3px;
+    padding: 14px 54px;
+    width: 163px;
+    height: 52px;
+    background: inherit;
+    font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.25;
+      text-transform: uppercase;
+      color: #57e1ff;
+      transition: box-shadow 0.3s ease;
+}
+.sign-in-btn:hover{
+  box-shadow: 0 0 10px 0 #57e1ff;
+}
+.header-btn-desk{
+  display: none;
+}
+@media screen and (min-width: 1439px) {
+  .header-container {
+    padding: 8px 80px;
+    gap: 100px;
+  }
+
+.header-img-wrapper{
+  width: 132px;
+}
+  .navigation-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation-item {
+    font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.21429;
+      text-transform: uppercase;
+      color: #fff;
+      opacity: 0.8;
+    transition: all 0.3s ease;
+    padding: 8px;
+     height: 30px;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .navigation-item:hover {
+    opacity: 1;
+  }
+
+  .navigation-item.active {
+    border-bottom: 1px solid #57e1ff;
+    opacity: 1;
+  }
+  .header-btn-desk {
+    display: flex;
+    gap: 12px;
+  }
+  .sign-in-btn-desk{
+    width: 86px;
+    height: 42px;
+    padding: 11px 18px;
+    box-shadow: 0 0 4px 0 #57e1ff;
+      background: rgba(87, 225, 255, 0.2);
+      font-size: 14px;
+  }
+  .sign-up-btn-desk{
+    padding: 14px 24px;
+      width: 146px;
+      height: 42px;
+      font-size: 14px;
+  }
 }

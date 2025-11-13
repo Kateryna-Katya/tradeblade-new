@@ -56,10 +56,12 @@ border: 1px solid #57e1ff;
             line-height: 1.42857;
         text-transform: uppercase;
         color: #030718;
+        transition: background 0.3s ease;
 }
 .hero-btn:hover {
-    background-color: #2CB8E5;
+    background: #2CB8E5;
 }
+
 .form-message {
     color: #57e1ff;
     margin-left: 10px;
@@ -70,6 +72,32 @@ border: 1px solid #57e1ff;
     margin-top: 22px;
     opacity: 0.3;
     line-height: 1.42857;
+}
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.hero-img-wrapper.pulse {
+    animation: pulse-animation 2s infinite;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    width: 300px;
+    margin-left: 10px;
+    height: auto;
+    margin-top: 40px;
 }
 @media only screen and (min-width: 1440px) {
 .hero-conatiner {
@@ -106,6 +134,9 @@ width: 500px;
 }
 .hero-input{
     height: 60px;  
+}
+.hero-img-wrapper.pulse {
+    width: 469px;
 }
 }
 /* Numbers */
